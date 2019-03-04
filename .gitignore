@@ -18,6 +18,20 @@
 *.zip
 *.tar.gz
 *.rar
+.idea/
+micro-service-cloud-api/micro-service-cloud-api.iml
+micro-service-cloud-config-3344/micro-service-cloud-config-3344.iml
+micro-service-cloud-config-client-3355/micro-service-cloud-config-client-3355.iml
+micro-service-cloud-consumer-dept-9001/micro-service-cloud-consumer-dept-9001.iml
+micro-service-cloud-eureka-7001/micro-service-cloud-eureka-7001.iml
+micro-service-cloud-eureka-7002/micro-service-cloud-eureka-7002.iml
+micro-service-cloud-eureka-7003/micro-service-cloud-eureka-7003.iml
+micro-service-cloud-feign-9002/micro-service-cloud-feign-9002.iml
+micro-service-cloud-provider-dept-8001/micro-service-cloud-provider-dept-8001.iml
+micro-service-cloud-provider-dept-8002/micro-service-cloud-provider-dept-8002.iml
+micro-service-cloud-provider-dept-8003/micro-service-cloud-provider-dept-8003.iml
+micro-service-cloud-zuul-6666/micro-service-cloud-zuul-6666.iml
+micro-service-cloud.iml
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
