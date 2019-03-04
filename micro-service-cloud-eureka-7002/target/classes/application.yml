@@ -1,0 +1,15 @@
+server:
+  port: 7002
+spring:
+  application:
+    name: eureka-7002
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    service-url: #只需要把它注册到其他eureka服务器上面就行了
+      defaultZone: http://peer1:7001/eureka/,http://peer3:7003/eureka/
+    #register-with-eureka: false false表示不向注册中心注册自己   在单机的时候选择false ,集群的时候true
+    #fetch-registry: false  false表示自己端就是注册中心，职责是维护实例，不需要去检索服务
+  server:
+    enable-self-preservation: false #关闭eureka的自我保护机制

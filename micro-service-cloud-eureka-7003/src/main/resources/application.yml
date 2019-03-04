@@ -1,0 +1,13 @@
+server:
+  port: 7003
+spring:
+  application:
+    name: eureka-7003
+eureka:
+  instance:
+    hostname: peer3
+  client:
+    service-url:
+      defaultZone: http://peer1:7001/eureka/,http://peer2:7002/eureka/
+  server:
+    enable-self-preservation: false

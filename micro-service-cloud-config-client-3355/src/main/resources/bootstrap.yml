@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    config:
+      name: cloud-config-client
+      profile: dev #本次访问的配置项
+      label: master # git分支名称
+      uri: http://localhost:3344

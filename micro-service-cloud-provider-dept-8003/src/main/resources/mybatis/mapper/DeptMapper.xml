@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wanyu.cloud.provider.dept.mapper.DeptMapper">
+
+    <select id="findById" resultType="com.wanyu.cloud.entities.Dept" parameterType="Long">
+        SELECT  deptno,dname,db_source FROM dept WHERE deptno=#{deptno};
+    </select>
+    <select id="findAll" resultType="com.wanyu.cloud.entities.Dept">
+        SELECT deptno,dname,db_source FROM dept;
+    </select>
+    <insert id="addDept" parameterType="com.wanyu.cloud.entities.Dept">
+        INSERT INTO dept(dname,db_source) VALUES (#{dname},DATABASE());
+    </insert>
+</mapper>
